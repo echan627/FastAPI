@@ -1,1 +1,0 @@
-# source fastapi/bin/activate
