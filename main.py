@@ -2,9 +2,11 @@ import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 import graph
+import networkXGraph
 
 app = FastAPI()
 app.include_router(graph.router)
+app.include_router(networkXGraph.router)
 
 origins = [
     "http://localhost",
